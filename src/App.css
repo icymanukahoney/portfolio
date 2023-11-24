@@ -887,6 +887,9 @@ path {
      margin: 120px;
      }
 
+     .about-section h1 {
+      margin-top: 35px;
+  }
      .project-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
