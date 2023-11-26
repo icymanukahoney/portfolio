@@ -28,27 +28,12 @@ const handleMatrixClick = () => {
   setMatrixVisible(false); // Set matrixVisible to false when the animation is clicked
 };
 
+
+
 // link to website hotel
 const handleOpenLinkClick = () => {
   window.open('https://icymanukahoney.github.io/Summative2-hotel-app/', '_blank');
 };
-
-// link to git hub news project
-const handleOpenGitHubNewsClick = () => {
-  window.open('https://github.com/icymanukahoney/Formative-3.1', '_blank');
-};
-
-// link to git hub hotel project
-const handleOpenGitHubHotelClick = () => {
-  window.open('https://github.com/icymanukahoney/Summative2-hotel-app', '_blank');
-};
-
-
-// link to git hub Figure project
-const handleOpenGitHubFigureClick = () => {
-  window.open('https://github.com/icymanukahoney/FigureHead', '_blank');
-};
-
 
 
 // link to colour website 
@@ -56,12 +41,22 @@ const handleOpenLinkColourClick = () => {
   window.open('https://summative4-livid.vercel.app/', '_blank');
 };
 
-// link to git hub news project
-const handleOpenGitHubColourClick = () => {
-  window.open('https://github.com/icymanukahoney/Summative4', '_blank');
+
+
+// link to git hub 
+const handleOpenGitHubClick = () => {
+  window.open('https://github.com/icymanukahoney/', '_blank');
 };
 
+// link to linkedin
+const handleOpenLinkedinClick = () => {
+  window.open('https://www.linkedin.com/in/maria-stromova-52a01587/', '_blank');
+};
 
+// link to instagram 
+const handleOpenInstaClick = () => {
+  window.open('https://www.instagram.com/icymanukahoney/', '_blank');
+};
 
 
 
@@ -217,23 +212,7 @@ useEffect(() => {
       <h1>{`{Projects}`}</h1>
       <div id="projects-container" className="project-container">
 
-      <div id="project-one" className="project-grid">
-        <div>
-        <img src="/assets/laptop-figure.jpg" id="img-project" className="project-image"
-         alt="figure-app" />
-        </div>
-
-        <div className="project-text">
-         <p>FigureHead is an online platform for passionate figurine enthusiasts, 
-          providing a secure space for connection and trade. </p>
-          </div>
-          <img src="/assets/git-hub.png" alt="news-app"
-         onClick={handleOpenGitHubFigureClick}
-         className="link"
-         id="git"
-         style={{ cursor: 'pointer' }}
-         />
-      </div>
+     
 
       <div id="project-two" className="project-grid">
 
@@ -253,31 +232,6 @@ useEffect(() => {
          id="link"
          style={{ cursor: 'pointer' }}
          />
-         
-         <img src="/assets/git-hub.png" alt="news-app"
-         onClick={handleOpenGitHubHotelClick}
-         className="link"
-         id="git"
-         style={{ cursor: 'pointer' }}
-         />
-      </div>
-
-      <div id="project-three" className="project-grid">
-        <div>
-        <img src="/assets/laptop news.jpg" id="img-project" className="project-image" alt="news-app" />
-        </div>
-
-          <div className="project-text">
-         <p>Smart News, a student project, offers real-time global weather updates, curated multilingual news, 
-          and diverse content, including quotes and jokes from NewsAPI, WeatherAPI, Quotes Type Fit, and Official Joke.</p>
-          </div>
-
-          <img src="/assets/git-hub.png" alt="news-app"
-         onClick={handleOpenGitHubNewsClick}
-         className="link"
-         id="git"
-         style={{ cursor: 'pointer' }}
-         />
       </div>
 
 <div id="project-four" className="project-grid">
@@ -295,13 +249,6 @@ useEffect(() => {
          onClick={handleOpenLinkColourClick}
          className="link"
          id="link"
-         style={{ cursor: 'pointer' }}
-         />
-         
-         <img src="/assets/git-hub.png" alt="news-app"
-         onClick={handleOpenGitHubColourClick}
-         className="link"
-         id="git"
          style={{ cursor: 'pointer' }}
          />
       </div>
@@ -329,7 +276,48 @@ useEffect(() => {
     <button id='contact-me-button' className="hello-button" onClick={handleSayHelloClick}>
       {`{Say Hello}`}
       </button>
+
+
+<div className="social-links-container" >
+      <ul id='social'>
+         <li>
+            <Link to="git-hub-social" smooth={true} duration={500}>
+            <img src="/assets/github-link.png" alt="news-app"
+            onClick={handleOpenGitHubClick}
+            className="icon-link"
+            id="social-icon"
+            style={{ cursor: 'pointer' }}
+           />
+            </Link>
+          </li>
+
+          <li>
+            <Link to="linkedin-social" smooth={true} duration={500}>
+            <img src="/assets/linkedin.png" alt="news-app"
+            onClick={handleOpenLinkedinClick}
+            className="icon-link"
+            id="social-icon"
+            style={{ cursor: 'pointer' }}
+            />
+            </Link>
+          </li>
+
+          <li>
+            <Link to="insta-social" smooth={true} duration={500}>
+            <img src="/assets/insta.png" alt="news-app"
+             onClick={handleOpenInstaClick}
+             className="icon-link"
+             id="social-icon"
+             style={{ cursor: 'pointer' }}
+             />
+            </Link>
+          </li>
+
+          </ul>
+          </div>
+
 </div>
+
 </section>
 </div>
   );

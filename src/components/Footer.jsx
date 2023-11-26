@@ -16,11 +16,8 @@ const Footer = () => {
     }
     
   return (
-    <div id="footer" className="footer-section"> 
-    <div className="copyright">
-    <FontAwesomeIcon icon={faCopyright} className="icon-copyright"/> Maria Stromova 2023
-    </div>
-
+  <div id="footer" className="footer-section"> 
+    
     <FontAwesomeIcon icon={faRocket} className="rocket-icon" onClick={scrollToTop} />
     
     <div className="icon-container">
@@ -63,7 +60,10 @@ const Footer = () => {
       >
         <img src="/assets/pink.png" alt="Paper Airplane Icon 3" />
       </motion.div>
+    </div>
 
+    <div className="copyright">
+    <FontAwesomeIcon icon={faCopyright} className="icon-copyright"/> Maria Stromova 2023
     </div>
 
  </div>
