@@ -4,6 +4,8 @@ import Typed from 'typed.js';
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ReactMatrixAnimation } from 'react-matrix-animation';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRocket } from "@fortawesome/free-solid-svg-icons"
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -17,6 +19,13 @@ const Home = () => {
   const passionRef = useRef(null);
 
   const flowersRef = useRef(null);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // Optional: adds smooth scrolling behavior
+    });
+}
 
 // mail
   const handleSayHelloClick = () => {
@@ -315,6 +324,8 @@ useEffect(() => {
 
           </ul>
           </div>
+
+          <FontAwesomeIcon icon={faRocket} id="rocket-icon" className="rocket-icon" onClick={scrollToTop} />
 
 </div>
 

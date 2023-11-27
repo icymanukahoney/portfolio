@@ -1,24 +1,14 @@
-import React, { useState, useEffect, useRef} from 'react';
+import React from 'react';
+//import React, { useState, useEffect, useRef} from 'react';
 import { motion } from "framer-motion"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCopyright } from "@fortawesome/free-solid-svg-icons";
-import { faRocket } from "@fortawesome/free-solid-svg-icons"
-
 
 
 const Footer = () => {
 
-    const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth" // Optional: adds smooth scrolling behavior
-        });
-    }
-    
   return (
   <div id="footer" className="footer-section"> 
     
-    <FontAwesomeIcon icon={faRocket} className="rocket-icon" onClick={scrollToTop} />
+    
     
     <div className="icon-container">
     <motion.div
@@ -62,9 +52,7 @@ const Footer = () => {
       </motion.div>
     </div>
 
-    <div className="copyright">
-    <FontAwesomeIcon icon={faCopyright} className="icon-copyright"/> Maria Stromova 2023
-    </div>
+    <div className="copyright"> &copy; Maria Stromova 2023 </div>
 
  </div>
   )

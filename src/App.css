@@ -5,8 +5,8 @@
 * {
   margin: 0;
   padding: 0;
-  
 }
+
 
 html, body  {
   margin: 0;
@@ -87,6 +87,7 @@ button:hover {
   cursor: pointer;
 }
 
+/*
 #hamburger-icon {
   color: rgb(100, 255, 218);
   font-size: 33px;
@@ -95,8 +96,40 @@ button:hover {
   padding-right: 50px;
   cursor: pointer; 
   display: block !important; 
+}  */
+
+#hamburger-icon {
+  color: rgb(100, 255, 218);
+  font-size: 33px;
+  cursor: pointer; 
+  display: block !important; 
+  position: relative;
+  top: 2px;
 }
 
+/* Add the following styles to increase the visibility */
+#hamburger-icon:hover {
+  color: #fec5fb;
+}
+
+.show-mobile-menu-button {
+  background: none;
+  border: none;
+}
+
+.show-mobile-menu-button:hover {
+  cursor: pointer;
+}
+
+#menu-button {
+  float: right;
+  background: none;
+  border: none;
+}
+
+#menu-button:hover {
+  cursor: pointer;
+}
 
 /*.hamburger {
   color: rgb(100, 255, 218);
@@ -114,6 +147,7 @@ button:hover {
   top: 0;
   left: 0;
   padding-top: 25%;
+ 
 }
 #mobile-menu a {
   color: rgb(100, 255, 218);
@@ -125,14 +159,31 @@ button:hover {
   font-weight: 700;
 }
 
-#close-nav-menu {
+path {
+  fill: rgb(100, 255, 218) !important;
+}
+
+
+#button-container {
+  width: 50%;
+}
+
+/* buttons */
+button {
+  background: none;
+  border: none;
+  display: block;
+}
+
+button#close-nav-menu {
   z-index: 2;
   position: absolute;
   top: 12px;
   right: 10px;
   font-size: 53px;
-  color: rgb(100, 255, 218);
+  color: #64ffda;
 }
+
 
 #menu {
   width: 75%;
@@ -557,6 +608,7 @@ body .matrix-animation-container {
   font-size: 16px;
   }
 
+  
 /* FOOTER */
 .footer-section {
   background-color: #1f8dd6; 
@@ -567,7 +619,7 @@ body .matrix-animation-container {
 .copyright{
   font-family: 'Bodoni Moda', serif, 'Fira Code', monospace;
   background-color: #1f8dd6;
-  font-size: 12px;
+  font-size: 18px;
   color: #0f172a;
 }
 
@@ -575,13 +627,7 @@ body .matrix-animation-container {
   background-color: #1f8dd6;
   border-radius: 50%;
 }
-.rocket-icon {
-  font-size: 30px;
-  background-color: #1f8dd6;
-  cursor: pointer;
-  margin-top: 20px;
-  transform: rotate(-45deg);
-}
+
 
 path {
   color: #0f172a;
@@ -641,9 +687,18 @@ img#social-icon.icon-link {
   height: 40px; 
   }
 
+  .rocket-icon {
+    font-size: 30px;
+    background-color: rgb(15, 23, 41);
+    cursor: pointer;
+    margin-top: 20px;
+    transform: rotate(-45deg);
+  }
 /*  @media screen and (max-width: 779px) {  */
 
 /* Media queries */
+
+
 
 @media only screen and (min-width: 480px) {
 
@@ -677,6 +732,7 @@ img#social-icon.icon-link {
   .icon-container img  { 
     width:80%;
   }
+
 
   
 }
@@ -856,7 +912,7 @@ font-size: 23px;
 }
 
 .copyright{
-  font-size: 15px;
+  font-size: 20px;
   color: #0f172a;
 }
 
@@ -910,6 +966,15 @@ img#social-icon.icon-link {
 
   .social-links-container ul {
     gap: 30px;
+    }
+    .rocket-icon {
+      font-size: 30px;
+      background-color: rgb(15, 23, 41);
+      cursor: pointer;
+      margin-top: 20px;
+      transform: rotate(-45deg);
+      width: 45px;
+      height: 50px;
     }
 
 }
