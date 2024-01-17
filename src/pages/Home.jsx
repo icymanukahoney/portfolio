@@ -50,6 +50,16 @@ const handleOpenLinkColourClick = () => {
   window.open('https://summative4-livid.vercel.app/', '_blank');
 };
 
+// link to gallery website 
+const handleOpenLinkGalleryClick = () => {
+  window.open('https://gallery-js-coral.vercel.app/', '_blank');
+};
+
+// link to bar website 
+const handleOpenLinkBarClick = () => {
+  window.open('https://sass-cafe-poject.vercel.app/', '_blank');
+};
+
 
 
 // link to git hub 
@@ -223,14 +233,13 @@ useEffect(() => {
 
      
 
-      <div id="project-two" className="project-grid">
-
+      <div id="project-four" className="project-grid">
         <div>
         <img src="/assets/tablet-hotel-mockup.jpg" id="img-project" className="project-image" alt="hotel-app" />
         </div>
 
         <div className="project-text">
-         <p>Alps and Ocean is the student project dedicated to developing a user-friendly single-page 
+         <p>Alps and Ocean is the JS student project dedicated to developing a user-friendly single-page 
          web application catering to visitors seeking short-term accommodations in the scenic South 
          Island of New Zealand.</p>
          </div>
@@ -243,15 +252,14 @@ useEffect(() => {
          />
       </div>
 
-<div id="project-four" className="project-grid">
-
+       <div id="project-four" className="project-grid">
         <div>
         <img src="/assets/3.png" id="img-project" className="project-image" alt="colour-app" />
         </div>
 
         <div className="project-text">
          <p>Colour Me Beautiful NZ, a leading website, empowers individuals with personalized colour analysis,
-           makeup classes, styling consultations across New Zealand.</p>
+           makeup classes, styling consultations across New Zealand (WordPress, React, PHP).</p>
          </div>
         
         <img src="/assets/white-link.png" alt="hotel-app"
@@ -262,9 +270,46 @@ useEffect(() => {
          />
       </div>
 
+      <div id="project-four" className="project-grid">
+        <div>
+        <img src="/assets/Gal.png" id="img-project" className="project-image" alt="gallery-app" />
+        </div>
+
+        <div className="project-text">
+         <p>Art Gallery Project - a one-page JavaScript app featuring works by famous artists.</p>
+         </div>
+        
+        <img src="/assets/white-link.png" alt="hotel-app"
+         onClick={handleOpenLinkGalleryClick}
+         className="link"
+         id="link"
+         style={{ cursor: 'pointer' }}
+         />
+      </div>
+
+      <div id="project-four" className="project-grid">
+        <div>
+        <img src="/assets/OGB.png" id="img-project" className="project-image" alt="OGB-bar-app" />
+        </div>
+
+        <div className="project-text">
+         <p>The O.G.B - the user-friendly app is designed to provide customers with easy access to the menu, 
+          streamlined order placement, and exclusive special offers (HTML, SASS).</p>
+         </div>
+        
+        <img src="/assets/white-link.png" alt="hotel-app"
+         onClick={handleOpenLinkBarClick}
+         className="link"
+         id="link"
+         style={{ cursor: 'pointer' }}
+         />
+      </div>
+
       </div>
 
 </section>
+
+
 
 
 <section id="contact" className="contact-section">
