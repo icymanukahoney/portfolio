@@ -77,6 +77,10 @@ const handleOpenInstaClick = () => {
   window.open('https://www.instagram.com/icymanukahoney/', '_blank');
 };
 
+// link to youtube 
+const handleOpenYoutubeClick = () => {
+  window.open('https://www.youtube.com/@mariamanuka6191/', '_blank');
+};
 
 
 
@@ -167,7 +171,7 @@ useEffect(() => {
     </h4>
     <h2>I am Maria Stromova</h2>
 
-    <h3>Frontend developer and UX designer</h3>
+    <h3>Frontend developer, UX designer and Video Creator</h3>
     <h4>
           <div className="typing" ref={passionRef}></div>
     </h4>
@@ -360,6 +364,17 @@ useEffect(() => {
             <Link to="insta-social" smooth={true} duration={500}>
             <img src="/assets/insta.png" alt="news-app"
              onClick={handleOpenInstaClick}
+             className="icon-link"
+             id="social-icon"
+             style={{ cursor: 'pointer' }}
+             />
+            </Link>
+          </li>
+
+          <li>
+            <Link to="insta-social" smooth={true} duration={500}>
+            <img src="/assets/icons8-youtube-120-4.png" alt="news-app"
+             onClick={handleOpenYoutubeClick}
              className="icon-link"
              id="social-icon"
              style={{ cursor: 'pointer' }}
