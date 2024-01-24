@@ -38,6 +38,12 @@ const Header = () => {
           </li>
 
           <li>
+            <Link to="reels" smooth={true} duration={500}>
+              Reels
+            </Link>
+          </li>
+
+          <li>
             <Link to="contact" smooth={true} duration={500}>
               Contact
             </Link>

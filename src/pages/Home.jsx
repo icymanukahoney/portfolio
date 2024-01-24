@@ -6,6 +6,7 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ReactMatrixAnimation } from 'react-matrix-animation';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket } from "@fortawesome/free-solid-svg-icons"
+import Video from '../components/Video'
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -79,7 +80,7 @@ const handleOpenInstaClick = () => {
 
 // link to youtube 
 const handleOpenYoutubeClick = () => {
-  window.open('https://www.youtube.com/@mariamanuka6191/', '_blank');
+  window.open('https://www.youtube.com/@icymanukahoney/', '_blank');
 };
 
 
@@ -106,26 +107,32 @@ useEffect(() => {
 
 
 //scroll for the nav bar to specific section 
-  useEffect(() => {
-    const handleScroll = () => {
-      const aboutMeSection = document.getElementById('about');
-      const projectsSection = document.getElementById('projects');
-      const contactSection = document.getElementById('contact');
+useEffect(() => {
+  const handleScroll = () => {
+    const aboutMeSection = document.getElementById('about');
+    const projectsSection = document.getElementById('projects');
+    const reelsSection = document.getElementById('reels');
+    const contactSection = document.getElementById('contact');
 
-      if (window.scrollY < aboutMeSection.offsetTop) {
-        setActiveSection('about');
-      } else if (window.scrollY < projectsSection.offsetTop) {
-        setActiveSection('projects');
-      } else {
-        setActiveSection('contact');
-      }
-    };
+    const scrollY = window.scrollY;
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []); // Empty dependency array ensures the effect runs only once after the initial render
+    if (scrollY < aboutMeSection.offsetTop) {
+      setActiveSection('about');
+    } else if (scrollY < projectsSection.offsetTop) {
+      setActiveSection('projects');
+    } else if (scrollY < reelsSection.offsetTop + reelsSection.offsetHeight) {
+      setActiveSection('reels');
+    } else {
+      setActiveSection('contact');
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+ // Empty dependency array ensures the effect runs only once after the initial render
 
 //typing animation
   useEffect(() => {
@@ -197,8 +204,9 @@ useEffect(() => {
   </div>
 
   <div className="grid-item"> 
-  <p>I'm a passionate and determined UX designer and web developer, 
-  and my journey to this point has been unexpectedly adventurous.
+  <p>
+  I'm a passionate and determined web developer, UX designer, content and 
+  video  creator, and my journey to this point has been unexpectedly adventurous.
   I've had the incredible opportunity to travel extensively, living 
   in various countries and cities, experiencing diverse cultures, and 
   embracing the beauty of this world. My thirst for knowledge and 
@@ -210,7 +218,8 @@ useEffect(() => {
   psychology, technology, and human interaction into something truly special. 
   It's about understanding users' needs and aspirations and translating them 
   into flawless digital journeys. I find inspiration in art, fashion, travel, 
-  and, most importantly, people.</p>
+  and, most importantly, people.
+  </p>
 
   <div className="skills-container">
     
@@ -233,9 +242,8 @@ useEffect(() => {
 
 <section id="projects" className="project-section">
       <h1>{`{Projects}`}</h1>
-      <div id="projects-container" className="project-container">
 
-     
+      <div id="projects-container" className="project-container">
 
       <div id="project-four" className="project-grid">
         <div>
@@ -314,6 +322,12 @@ useEffect(() => {
 </section>
 
 
+<section id="reels" className="video-section">
+<h1>{`{Reels}`}</h1>
+<div id="video-container" className="video-container">
+      <Video />
+    </div>
+</section>
 
 
 <section id="contact" className="contact-section">

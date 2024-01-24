@@ -18,6 +18,13 @@ const MobileMenu = ({closeMethod}) => {
             Projects
           </a>
         </li>
+
+        <li>
+          <a href='#reels' onClick={closeMethod}>
+            Reels
+          </a>
+        </li>
+
         <li>
           <a href='#contact' onClick={closeMethod}>
             Contact

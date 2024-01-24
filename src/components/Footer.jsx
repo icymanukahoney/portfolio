@@ -52,7 +52,7 @@ const Footer = () => {
       </motion.div>
     </div>
 
-    <div className="copyright"> &copy; Maria Stromova 2023 </div>
+    <div className="copyright"> &copy; Maria Stromova 2024 </div>
 
  </div>
   )

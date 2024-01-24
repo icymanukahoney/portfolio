@@ -8,6 +8,7 @@
 }
 
 
+
 html, body  {
   margin: 0;
   padding: 0px;
@@ -442,11 +443,12 @@ body .matrix-animation-container {
       position: relative;
       width: 100%;
       margin-bottom: 20px;
+      height: 100%;
     }
     
     .project-image {
       width: 100%;
-      height: auto;
+      height: 100%;;
       filter: brightness(30%); 
       border-radius: 3px;
       border: 1px solid #64ffda;
@@ -489,7 +491,48 @@ body .matrix-animation-container {
         left:40px;
         bottom: 20px;
       }
-    
+    /*Reels */
+      .video-section h1 {
+        color: rgb(100, 255, 218);
+        text-decoration: none;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-family: 'Fira Code', monospace;
+        }
+
+        .video-section {
+            -webkit-box-pack: center;
+            -webkit-box-align: center;
+            height: 100vh;
+            height: 100%;
+            padding: 0px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            }
+
+        .video-container #reels.video-section  {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: 80vh;
+        }
+        
+        .video-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 20px;
+          align-items: center;
+          text-align: center;
+        }
+        
+        .video-container video {
+          width: 100%;
+          object-fit: cover;
+          height: 100%;
+        }
+       
   /*Contact */
 
 .contact-section {
@@ -806,7 +849,14 @@ span{
     font-size: 18px;
     color: #8892b0;
     margin-bottom: 20px;
-    padding-left: 20px;
+}
+
+.about-section h1 {
+font-size: 23px;
+}
+
+.project-section h1 {
+  font-size: 23px;
 }
 .about-section ul li {
   font-size: 18px;
@@ -817,7 +867,7 @@ span{
     gap: 20px;
     align-items: start;
     position: relative;
-    overflow: hidden;
+    
   }
   section {
   margin: 0px auto;
@@ -842,7 +892,7 @@ span{
 
  .project-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   filter: brightness(30%);
   border-radius: 3px;
   border: 1px solid #64ffda;
@@ -880,14 +930,25 @@ img#git.link {
   bottom: 30px;
 }
 
+.video-container {
+  grid-template-columns: repeat(400px, 2fr); 
+}
+
+.video-container video {
+  max-width: 100%; 
+}
+.video-section h1 {
+  font-size: 23px;
+  }
+
 .contact-section h1 {
   font-size: 23px;
   }
   
   .flower-container-home img {
     position: absolute;
-    width: 50px; /* Adjust the width of the icons as needed */
-    height: 50px; /* Adjust the height of the icons as needed */
+    width: 50px; 
+    height: 50px; 
   }
 
 #contact-me-button.hello-button {
@@ -1000,7 +1061,7 @@ img#social-icon.icon-link {
   
   .project-image {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
   }
   
@@ -1017,6 +1078,13 @@ img#social-icon.icon-link {
     padding-bottom: 20px;
 }
 
+.video-container {
+  grid-template-columns: repeat(300px, 3fr); 
+}
+
+.video-container video {
+  max-width: 100%; 
+}
 
 .contact-section h1 {
   font-size: 25px;
