@@ -425,6 +425,9 @@ body .matrix-animation-container {
     min-height: 100vh;
     height: 100vh;
   }
+  
+
+   /* Projects */
 
     #projects {
       position: relative;
@@ -470,6 +473,8 @@ body .matrix-animation-container {
       bottom: 20px;
       cursor: pointer;
       color:#64ffda;
+      width: 40px;
+      height: 40px;
     }
     .link :hover {
       color: #fec5fb;
@@ -491,7 +496,41 @@ body .matrix-animation-container {
         left:40px;
         bottom: 20px;
       }
-    /*Reels */
+
+         /* UX  */
+         #ux {
+          position: relative;
+          background-size: cover;
+          background-position: center;
+        }
+        
+        .ux-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .ux-section h1 {
+          color: rgb(100, 255, 218);
+          text-decoration: none;
+          font-size: 20px;
+          margin-top: 50px;
+          margin-bottom: 10px;
+          font-family: 'Fira Code', monospace;
+      }
+      img#link-behance.link-behance {
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+      }
+
+         /*Reels */
       .video-section h1 {
         color: rgb(100, 255, 218);
         text-decoration: none;
@@ -729,6 +768,16 @@ img#social-icon.icon-link {
   width: 40px; 
   height: 40px; 
   }
+  #social li:hover img {
+    filter: brightness(100%) saturate(100%) hue-rotate(0deg);
+    /* Change the image color to #fec5fb */
+    filter: drop-shadow(0 0 0 #fec5fb);
+  }
+
+  img#social-icon-be.icon-link-be {
+    width: 60px; 
+    height: 60px; 
+    }
 
   .rocket-icon {
     font-size: 30px;
@@ -888,6 +937,15 @@ font-size: 23px;
   display: grid;
   grid-template-columns: 100% 1fr 1fr; /* Two equal-width columns */
   gap: 20px; /* Margin between columns */
+  margin-bottom: 50px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
  .project-image {
@@ -915,10 +973,28 @@ font-size: 23px;
   bottom: 30px;
   cursor: pointer;
   color: #64ffda;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
 
+.ux-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+img#link-behance.link-behance {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 35px;
+  height: 35px;
+}
 
 img#git.link {
   cursor: pointer;
@@ -1023,6 +1099,12 @@ path {
 img#social-icon.icon-link {
   width: 60px; 
   height: 60px; 
+  }
+
+  #social li:hover img {
+    filter: brightness(100%) saturate(100%) hue-rotate(0deg);
+    /* Change the image color to #fec5fb */
+    filter: drop-shadow(0 0 0 #fec5fb);
   }
 
   .social-links-container ul {
@@ -1162,8 +1244,20 @@ padding-bottom: 30px;
     position: absolute;
     left: 20px;
     bottom: 20px;
+    width: 40px;
+    height: 40px;
   }
   
+  img#link-behance.link-behance {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+  }
 
 }
 

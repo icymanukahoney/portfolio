@@ -1,7 +1,14 @@
-import React from 'react';
+import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const Video = () => {
   return (
+<>
+    <Helmet>
+  <title>Maria Stromova Portfolio - Home</title>
+  <meta name="description" content="Website-portfolio of the Frontend developer, UX designer and Digital and Content Creator, Maria Stromova" />
+  <meta name="keywords" content="ux design, web design, frontend, digital, content creation, video, Maria Stromova" />
+  </Helmet>
      
      <div className="video-container">
       <video  controls>
@@ -17,6 +24,7 @@ const Video = () => {
         Your browser does not support the video tag.
       </video>
     </div>
+    </>
   );
 };
 

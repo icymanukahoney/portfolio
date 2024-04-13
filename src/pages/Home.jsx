@@ -1,12 +1,13 @@
-import React, { useState, useEffect, useRef} from 'react';
-import { Link } from 'react-scroll';
-import Typed from 'typed.js';
-import { gsap } from "gsap";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { ReactMatrixAnimation } from 'react-matrix-animation';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState, useEffect, useRef} from 'react'
+import { Link } from 'react-scroll'
+import Typed from 'typed.js'
+import { gsap } from "gsap"
+import { MotionPathPlugin } from "gsap/MotionPathPlugin"
+import { ReactMatrixAnimation } from 'react-matrix-animation'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faRocket } from "@fortawesome/free-solid-svg-icons"
 import Video from '../components/Video'
+import { Helmet } from 'react-helmet'
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -39,12 +40,12 @@ const handleMatrixClick = () => {
 };
 
 
+// WEBSITES LINKS
 
 // link to website hotel
 const handleOpenLinkClick = () => {
   window.open('https://icymanukahoney.github.io/Summative2-hotel-app/', '_blank');
 };
-
 
 // link to colour website 
 const handleOpenLinkColourClick = () => {
@@ -62,6 +63,17 @@ const handleOpenLinkBarClick = () => {
 };
 
 
+
+// BEHANCE - UX LINKS 
+
+// link to COLOUR BEhance UX Portfolio 
+const handleOpenUxLinkColourClick = () => {
+  window.open('https://www.behance.net/gallery/196053937/Colour-Me-Beautiful-NZ-Student-Study-Project/', '_blank');
+};
+
+
+
+// ICONS LINKS - Footer
 
 // link to git hub 
 const handleOpenGitHubClick = () => {
@@ -81,6 +93,11 @@ const handleOpenInstaClick = () => {
 // link to youtube 
 const handleOpenYoutubeClick = () => {
   window.open('https://www.youtube.com/@icymanukahoney/', '_blank');
+};
+
+// link to youtube 
+const handleOpenBehanceClick = () => {
+  window.open('https://www.behance.net/mariaroe/', '_blank');
 };
 
 
@@ -111,6 +128,7 @@ useEffect(() => {
   const handleScroll = () => {
     const aboutMeSection = document.getElementById('about');
     const projectsSection = document.getElementById('projects');
+    const uxSection = document.getElementById('ux');
     const reelsSection = document.getElementById('reels');
     const contactSection = document.getElementById('contact');
 
@@ -120,6 +138,8 @@ useEffect(() => {
       setActiveSection('about');
     } else if (scrollY < projectsSection.offsetTop) {
       setActiveSection('projects');
+    }  else if (scrollY < uxSection.offsetTop) {
+        setActiveSection('ux');
     } else if (scrollY < reelsSection.offsetTop + reelsSection.offsetHeight) {
       setActiveSection('reels');
     } else {
@@ -170,15 +190,22 @@ useEffect(() => {
 
 
   return (
+<>
+  <Helmet>
+  <title>Maria Stromova Portfolio - Home</title>
+  <meta name="description" content="Website-portfolio of the Frontend developer, UX designer and Digital and Content Creator, Maria Stromova" />
+  <meta name="keywords" content="portfolio, website, ux design, web design, frontend, digital, content creation, video, Maria Stromova" />
+  </Helmet>
+
 <div id="main"className="main-section">
 
 <section id="hero" className="hero-section">
     <h4>
           <div className="typing" ref={helloRef}></div>
     </h4>
-    <h2>I am Maria Stromova</h2>
+    <h2>I am Maria Stromova, </h2>
 
-    <h3>Frontend developer, UX designer and Video Creator</h3>
+    <h3>a Frontend developer, UX designer, Digital Content and Video Creator </h3>
     <h4>
           <div className="typing" ref={passionRef}></div>
     </h4>
@@ -205,7 +232,7 @@ useEffect(() => {
 
   <div className="grid-item"> 
   <p>
-  I'm a passionate and determined web developer, UX designer, content and 
+  I'm a passionate and determined web developer, UX designer, digital content and 
   video  creator, and my journey to this point has been unexpectedly adventurous.
   I've had the incredible opportunity to travel extensively, living 
   in various countries and cities, experiencing diverse cultures, and 
@@ -213,8 +240,8 @@ useEffect(() => {
   self-improvement has led me to complete two degrees and earn two diplomas.
   I've always been a curious soul, exploring different roles and professions
   in search of my true calling. Then, like a puzzle falling into place, 
-  I discovered my passion for UX Design and Web Development.
-  To me, UX Design and Web Development are magical because they blend art, 
+  I discovered my passion for UX Design, Web Development and Digital creation.
+  To me, UX design, web development, and digital content creation are magical because they blend art, 
   psychology, technology, and human interaction into something truly special. 
   It's about understanding users' needs and aspirations and translating them 
   into flawless digital journeys. I find inspiration in art, fashion, travel, 
@@ -318,8 +345,30 @@ useEffect(() => {
       </div>
 
       </div>
-
 </section>
+
+
+<section id="ux" className="ux-section">
+<h1>{`{UX}`}</h1>
+
+<div id="ux-container" className="ux-container">
+
+<div id="project-four" className="project-grid">
+        <div>
+        <img src="/assets/Frame 10.png" id="img-project" className="project-image" alt="hotel-app" />
+        </div>
+        
+        <img src="/assets/behance-50.png" alt="hotel-app"
+         onClick={handleOpenUxLinkColourClick}
+         className="link-behance"
+         id="link-behance"
+         style={{ cursor: 'pointer' }}
+         />
+      </div>
+
+</div>
+</section>
+
 
 
 <section id="reels" className="video-section">
@@ -396,6 +445,19 @@ useEffect(() => {
             </Link>
           </li>
 
+          
+
+          <li>
+            <Link to="insta-social" smooth={true} duration={500}>
+            <img src="/assets/icons8-behance-120-3.png" alt="news-app"
+             onClick={handleOpenBehanceClick}
+             className="icon-link"
+             id="social-icon"
+             style={{ cursor: 'pointer' }}
+             />
+            </Link>
+          </li>
+
           </ul>
           </div>
 
@@ -405,6 +467,7 @@ useEffect(() => {
 
 </section>
 </div>
+</>
   );
 };
 
