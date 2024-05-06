@@ -32,14 +32,14 @@ const Header = () => {
           </li>
 
           <li>
-            <Link to="projects" smooth={true} duration={500}>
-              Projects
+            <Link to="ux" smooth={true} duration={500}>
+              UX
             </Link>
           </li>
 
           <li>
-            <Link to="ux" smooth={true} duration={500}>
-              UX
+            <Link to="projects" smooth={true} duration={500}>
+              Projects
             </Link>
           </li>
 

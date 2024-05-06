@@ -260,11 +260,30 @@ useEffect(() => {
       <li>WordPress</li>
     </ul>
   </div>
-
-
     </div>
 
   </div>
+</section>
+
+<section id="ux" className="ux-section">
+<h1>{`{UX}`}</h1>
+
+<div id="ux-container" className="ux-container">
+
+<div id="project-four" className="project-grid">
+        <div>
+        <img src="/assets/Frame 10.png" id="img-project" className="project-image" alt="hotel-app" />
+        </div>
+        
+        <img src="/assets/behance-50.png" alt="hotel-app"
+         onClick={handleOpenUxLinkColourClick}
+         className="link-behance"
+         id="link-behance"
+         style={{ cursor: 'pointer' }}
+         />
+      </div>
+
+</div>
 </section>
 
 <section id="projects" className="project-section">
@@ -345,28 +364,6 @@ useEffect(() => {
       </div>
 
       </div>
-</section>
-
-
-<section id="ux" className="ux-section">
-<h1>{`{UX}`}</h1>
-
-<div id="ux-container" className="ux-container">
-
-<div id="project-four" className="project-grid">
-        <div>
-        <img src="/assets/Frame 10.png" id="img-project" className="project-image" alt="hotel-app" />
-        </div>
-        
-        <img src="/assets/behance-50.png" alt="hotel-app"
-         onClick={handleOpenUxLinkColourClick}
-         className="link-behance"
-         id="link-behance"
-         style={{ cursor: 'pointer' }}
-         />
-      </div>
-
-</div>
 </section>
 
 

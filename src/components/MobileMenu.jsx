@@ -13,15 +13,16 @@ const MobileMenu = ({closeMethod}) => {
             About
           </a>
         </li>
-        <li>
-          <a href='#projects' onClick={closeMethod}>
-            Projects
-          </a>
-        </li>
 
         <li>
           <a href='#ux' onClick={closeMethod}>
             UX
+          </a>
+        </li>
+        
+        <li>
+          <a href='#projects' onClick={closeMethod}>
+            Projects
           </a>
         </li>
 
