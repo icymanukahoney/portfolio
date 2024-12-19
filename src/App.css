@@ -1160,6 +1160,17 @@ img#social-icon.icon-link {
     padding-bottom: 20px;
 }
 
+.ux-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.ux-section h1 {
+  padding-bottom: 20px;
+}
+
 .video-container {
   grid-template-columns: repeat(300px, 3fr); 
 }

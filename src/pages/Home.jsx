@@ -9,6 +9,8 @@ import { faRocket } from "@fortawesome/free-solid-svg-icons"
 import Video from '../components/Video'
 import { Helmet } from 'react-helmet'
 
+
+
 gsap.registerPlugin(MotionPathPlugin);
 
 const Home = () => {
@@ -69,6 +71,11 @@ const handleOpenLinkBarClick = () => {
 // link to COLOUR BEhance UX Portfolio 
 const handleOpenUxLinkColourClick = () => {
   window.open('https://www.behance.net/gallery/196053937/Colour-Me-Beautiful-NZ-Student-Study-Project/', '_blank');
+};
+
+// link to portfolio BEhance UX Portfolio 
+const handleOpenUxLinkPortfolioClick = () => {
+  window.open('https://www.behance.net/gallery/215096263/UXUI-Design-Portfolio-Website', '_blank');
 };
 
 
@@ -203,7 +210,7 @@ useEffect(() => {
     <h4>
           <div className="typing" ref={helloRef}></div>
     </h4>
-    <h2>I am Maria Stromova, </h2>
+    <h2>I am Maria, </h2>
 
     <h3>a Frontend developer, UX designer, Digital Content and Video Creator </h3>
     <h4>
@@ -272,7 +279,7 @@ useEffect(() => {
 
 <div id="project-four" className="project-grid">
         <div>
-        <img src="/assets/Frame 10.png" id="img-project" className="project-image" alt="hotel-app" />
+          <img src="/assets/Frame 10.png" id="img-project" className="project-image" alt="colorbeauty-UX" />
         </div>
         
         <img src="/assets/behance-50.png" alt="hotel-app"
@@ -281,7 +288,20 @@ useEffect(() => {
          id="link-behance"
          style={{ cursor: 'pointer' }}
          />
-      </div>
+  </div>
+
+  <div id="project-four" className="project-grid">
+        <div>
+          <img src="/assets/portfolio desktop.png" id="img-project" className="project-image" alt="portfolio-UX" />
+        </div>
+        
+        <img src="/assets/behance-50.png" alt="hotel-app"
+         onClick={handleOpenUxLinkPortfolioClick}
+         className="link-behance"
+         id="link-behance"
+         style={{ cursor: 'pointer' }}
+         />
+  </div>
 
 </div>
 </section>
