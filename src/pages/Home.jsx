@@ -50,19 +50,11 @@ const handleOpenLinkClick = () => {
 };
 
 // link to colour website 
-const handleOpenLinkColourClick = () => {
-  window.open('https://summative4-livid.vercel.app/', '_blank');
+const handleOpenLinkPrecisionClick = () => {
+  window.open('https://precision-tech-zeta.vercel.app/#/', '_blank');
 };
 
-// link to gallery website 
-const handleOpenLinkGalleryClick = () => {
-  window.open('https://gallery-js-coral.vercel.app/', '_blank');
-};
 
-// link to bar website 
-const handleOpenLinkBarClick = () => {
-  window.open('https://sass-cafe-poject.vercel.app/', '_blank');
-};
 
 
 
@@ -313,6 +305,25 @@ useEffect(() => {
 
       <div id="project-four" className="project-grid">
         <div>
+        <img src="/assets/Precision.png" id="img-project" className="project-image" alt="Precision-app" />
+        </div>
+
+        <div className="project-text">
+         <p>I designed and developed the website for PrecisionTech Services using React.js, Vite, and Figma, with deployment on Vercel. 
+          The site highlights the company's expertise in CNC machining support, mechanical and control fault finding, and CAM programming.  
+         </p>
+         </div>
+        
+        <img src="/assets/white-link.png" alt="hotel-app"
+         onClick={handleOpenLinkPrecisionClick}
+         className="link"
+         id="link"
+         style={{ cursor: 'pointer' }}
+         />
+      </div>
+
+      <div id="project-four" className="project-grid">
+        <div>
         <img src="/assets/tablet-hotel-mockup.jpg" id="img-project" className="project-image" alt="hotel-app" />
         </div>
 
@@ -324,59 +335,6 @@ useEffect(() => {
         
         <img src="/assets/white-link.png" alt="hotel-app"
          onClick={handleOpenLinkClick}
-         className="link"
-         id="link"
-         style={{ cursor: 'pointer' }}
-         />
-      </div>
-
-       <div id="project-four" className="project-grid">
-        <div>
-        <img src="/assets/3.png" id="img-project" className="project-image" alt="colour-app" />
-        </div>
-
-        <div className="project-text">
-         <p>Colour Me Beautiful NZ, a leading website, empowers individuals with personalized colour analysis,
-           makeup classes, styling consultations across New Zealand (WordPress, React, PHP).</p>
-         </div>
-        
-        <img src="/assets/white-link.png" alt="hotel-app"
-         onClick={handleOpenLinkColourClick}
-         className="link"
-         id="link"
-         style={{ cursor: 'pointer' }}
-         />
-      </div>
-
-      <div id="project-four" className="project-grid">
-        <div>
-        <img src="/assets/Gal.png" id="img-project" className="project-image" alt="gallery-app" />
-        </div>
-
-        <div className="project-text">
-         <p>Art Gallery Project - a one-page JavaScript app featuring works by famous artists.</p>
-         </div>
-        
-        <img src="/assets/white-link.png" alt="hotel-app"
-         onClick={handleOpenLinkGalleryClick}
-         className="link"
-         id="link"
-         style={{ cursor: 'pointer' }}
-         />
-      </div>
-
-      <div id="project-four" className="project-grid">
-        <div>
-        <img src="/assets/OGB.png" id="img-project" className="project-image" alt="OGB-bar-app" />
-        </div>
-
-        <div className="project-text">
-         <p>The O.G.B - the user-friendly app is designed to provide customers with easy access to the menu, 
-          streamlined order placement, and exclusive special offers (HTML, SASS).</p>
-         </div>
-        
-        <img src="/assets/white-link.png" alt="hotel-app"
-         onClick={handleOpenLinkBarClick}
          className="link"
          id="link"
          style={{ cursor: 'pointer' }}
