@@ -51,7 +51,7 @@ const handleOpenLinkClick = () => {
 
 // link to colour website 
 const handleOpenLinkPrecisionClick = () => {
-  window.open('https://precision-tech-zeta.vercel.app/#/', '_blank');
+  window.open('https://www.precisiontech.co.nz/', '_blank');
 };
 
 
