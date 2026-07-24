@@ -14,6 +14,7 @@ const MobileMenu = ({closeMethod}) => {
           </a>
         </li>
 
+        {/*
         <li>
           <a href='#ux' onClick={closeMethod}>
             UX
@@ -26,9 +27,11 @@ const MobileMenu = ({closeMethod}) => {
           </a>
         </li>
 
+        */}
+
         <li>
           <a href='#reels' onClick={closeMethod}>
-            Reels
+            Projects
           </a>
         </li>
 

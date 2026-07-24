@@ -30,7 +30,7 @@ const Header = () => {
               About
             </Link>
           </li>
-
+{/*
           <li>
             <Link to="ux" smooth={true} duration={500}>
               UX
@@ -43,9 +43,10 @@ const Header = () => {
             </Link>
           </li>
 
+*/}
           <li>
             <Link to="reels" smooth={true} duration={500}>
-              Reels
+              Projects
             </Link>
           </li>
 

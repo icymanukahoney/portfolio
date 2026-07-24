@@ -86,7 +86,7 @@ const handleOpenLinkedinClick = () => {
 
 // link to instagram 
 const handleOpenInstaClick = () => {
-  window.open('https://www.instagram.com/icymanukahoney/', '_blank');
+  window.open('https://www.instagram.com/fashiondesertsnow/', '_blank');
 };
 
 // link to youtube 
@@ -100,6 +100,7 @@ const handleOpenBehanceClick = () => {
 };
 
 
+/*
 
 // flower icons 
 const flowerClickHandler = (flower) => {
@@ -121,24 +122,30 @@ useEffect(() => {
   };
 }, []);
 
+*/
 
 //scroll for the nav bar to specific section 
 useEffect(() => {
   const handleScroll = () => {
     const aboutMeSection = document.getElementById('about');
+    /*
     const projectsSection = document.getElementById('projects');
-    const uxSection = document.getElementById('ux');
+    const uxSection = document.getElementById('ux'); 
+    */
     const reelsSection = document.getElementById('reels');
     const contactSection = document.getElementById('contact');
 
     const scrollY = window.scrollY;
 
+
     if (scrollY < aboutMeSection.offsetTop) {
       setActiveSection('about');
+      /*
     } else if (scrollY < projectsSection.offsetTop) {
       setActiveSection('projects');
     }  else if (scrollY < uxSection.offsetTop) {
         setActiveSection('ux');
+        */
     } else if (scrollY < reelsSection.offsetTop + reelsSection.offsetHeight) {
       setActiveSection('reels');
     } else {
@@ -166,8 +173,8 @@ useEffect(() => {
 
     const passionOptions = {
       strings: [
-        `<span className="green-text">I am passionate about building exceptional digital
-         experience and specializing in bringing innovative ideas to life </span>`
+        `<span className="green-text">Every story is a different reality.
+Reality is editable. </span>`
         ], // Array of strings to be typed
       typeSpeed: 50, // Typing speed in milliseconds
       backSpeed: 50, // Backspacing speed in milliseconds
@@ -204,7 +211,7 @@ useEffect(() => {
     </h4>
     <h2>I am Maria, </h2>
 
-    <h3>a Frontend developer, UX designer, Digital Content and Video Creator </h3>
+    <h3>a Visual Designer creating content, motion, and AI-assisted visuals. </h3>
     <h4>
           <div className="typing" ref={passionRef}></div>
     </h4>
@@ -221,8 +228,24 @@ useEffect(() => {
 
   <h1 data-aos="zoom-in">{`{About}`}</h1>
 
-  {matrixVisible && <div className="matrix-animation-container" onClick={handleMatrixClick}><ReactMatrixAnimation /></div>}
+  {/* {matrixVisible && <div className="matrix-animation-container" onClick={handleMatrixClick}><ReactMatrixAnimation /></div>} */}
 
+  {matrixVisible && (
+  <div
+    className="matrix-animation-container"
+    onClick={handleMatrixClick}
+  >
+    <ReactMatrixAnimation />
+
+    <div className="matrix-overlay-text">
+      <p>Look closer.</p>
+      <span>There's more.</span>
+      <h2>ENTER</h2>
+    </div>
+  </div>
+)}
+  
+  
   <div id="about-me-grid" className="about-grid">
 
   <div className="grid-item"> 
@@ -231,38 +254,36 @@ useEffect(() => {
 
   <div className="grid-item"> 
   <p>
-  I'm a passionate and determined web developer, UX designer, digital content and 
-  video  creator, and my journey to this point has been unexpectedly adventurous.
-  I've had the incredible opportunity to travel extensively, living 
-  in various countries and cities, experiencing diverse cultures, and 
-  embracing the beauty of this world. My thirst for knowledge and 
-  self-improvement has led me to complete two degrees and earn two diplomas.
-  I've always been a curious soul, exploring different roles and professions
-  in search of my true calling. Then, like a puzzle falling into place, 
-  I discovered my passion for UX Design, Web Development and Digital creation.
-  To me, UX design, web development, and digital content creation are magical because they blend art, 
-  psychology, technology, and human interaction into something truly special. 
-  It's about understanding users' needs and aspirations and translating them 
-  into flawless digital journeys. I find inspiration in art, fashion, travel, 
-  and, most importantly, people.
+  I create motion design, AI-assisted visuals, and brand concepts that blend storytelling, movement, and atmosphere.
+
+Based in New Zealand, with a background in UX, web design, and visual communication.
+
+Today my work focuses on creating memorable visual stories through motion, design, and AI-assisted creative workflows.
   </p>
 
+{/* 
   <div className="skills-container">
-    
-    <h5>Here are my recently acquired skills and technologies:</h5>
-    <ul>
-      <li>Figma (UX/UI)</li>
-      <li>HTML5, CSS3, SASS</li>
-      <li>React</li>
-      <li>JavaScript (ES6+)</li>
-      <li>Node.js, Express.js</li>
-      <li>WordPress</li>
+    <h5>Skills</h5>
+    <ul> <h4>Creative</h4>
+      <li>Motion Design</li>
+      <li>AI Visual Creation</li>
+      <li>Visual Storytelling</li>
+      <li>Brand Concepts</li>
+      <li>Content Creation</li>
+      <li>Art Direction</li>
     </ul>
   </div>
+  */} 
+
+  
     </div>
 
   </div>
 </section>
+
+
+
+{/* 
 
 <section id="ux" className="ux-section">
 <h1>{`{UX}`}</h1>
@@ -298,6 +319,10 @@ useEffect(() => {
 </div>
 </section>
 
+*/} 
+
+
+{/*
 <section id="projects" className="project-section">
       <h1>{`{Projects}`}</h1>
 
@@ -343,11 +368,13 @@ useEffect(() => {
 
       </div>
 </section>
+ */}
+
 
 
 
 <section id="reels" className="video-section">
-<h1>{`{Reels}`}</h1>
+<h1>{`{Projects}`}</h1>
 <div id="video-container" className="video-container">
       <Video />
     </div>
@@ -361,6 +388,7 @@ useEffect(() => {
 <p>If you have an idea for a project,</p>
 <p>don't hesitate to reach out via email!</p>
 
+{/*
 <div className="flower-container-home" ref={flowersRef}>
     <img src="/assets/pink-flower.png" alt="Pink Flower"/>
     <img src="/assets/pink-flower.png" alt="Pink Flower"/>
@@ -368,6 +396,7 @@ useEffect(() => {
     <img src="/assets/pink-flower.png" alt="Pink Flower"/>
     <img src="/assets/pink-flower.png" alt="Pink Flower"/>
  </div>
+*/}
 
     <button id='contact-me-button' className="hello-button" onClick={handleSayHelloClick}>
       {`{Say Hello}`}
