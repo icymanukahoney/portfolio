@@ -260,25 +260,53 @@ Based in New Zealand, with a background in UX, web design, and visual communicat
 
 Today my work focuses on creating memorable visual stories through motion, design, and AI-assisted creative workflows.
   </p>
-
-{/* 
+  
+ 
   <div className="skills-container">
-    <h5>Skills</h5>
-    <ul> <h4>Creative</h4>
+    <h5>SKILLS</h5>
+<div className="skills-wrapper">
+
+    <div>
+    <h4>Creative</h4>
+     <ul>
       <li>Motion Design</li>
       <li>AI Visual Creation</li>
       <li>Visual Storytelling</li>
       <li>Brand Concepts</li>
       <li>Content Creation</li>
-      <li>Art Direction</li>
     </ul>
-  </div>
-  */} 
+</div>
 
+<div>
+    <h4>Tools</h4>
+     <ul>
+      <li>Alight Motion</li>
+      <li>Midjourney</li>
+      <li>CapCut</li>
+      <li>Canva</li>
+      <li>Figma</li>
+    </ul>
+    </div>
+
+<div>
+    <h4>UX / Web</h4>
+     <ul>
+      <li>UX Design</li>
+      <li>Responsive Design</li>
+      <li>HTML5</li>
+      <li>CSS3 / SASS</li>
+      <li>JavaScript (ES6+)</li>
+      <li>React</li>
+    </ul>
+</div>
+
+  </div>
   
+
     </div>
 
   </div>
+</div>
 </section>
 
 

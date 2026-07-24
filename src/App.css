@@ -283,7 +283,6 @@ height: 100%;
 }*/
   
 .hero-section h2 {
-  color: #ccd6f6;
   margin-bottom: 20px;
   /*font-weight: 100;*/
   font-size: 20px;
@@ -293,7 +292,7 @@ height: 100%;
 }
 
 .hero-section h3 {
-  color: #8892b0;
+  color: #ccd6f6;
   margin-bottom: 20px;
   /*font-weight: 100;*/
   font-size: 30px;
@@ -397,14 +396,62 @@ span{
 
 .about-section p {
   text-decoration: none;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  
   background-color: #0f172a;
   font-family: 'Fira Code', monospace;
-  font-size: 16px;
-  color: #8892b0;
+  font-size: 15px;
+  color: #ccd6f6;
   margin-bottom: 20px;
   }
+
+
+  .skills-container {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.skills-container h4 {
+  color: #64ffda;
+  font-family: 'Fira Code', monospace;
+  font-size: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skills-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 34px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 20px;
+}
+
+.skills-container li {
+  color: #ccd6f6;
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+  position: relative;
+  padding-left: 14px;
+}
+
+.skills-container li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #64ffda;
+}
+
+.skills-container h5 {
+  color: #ccd6f6;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family: 'Fira Code', monospace;
+}
+
+  /*
   .skills-container {
     max-width: 400px;
     margin: auto;
@@ -434,6 +481,8 @@ span{
     text-align: center;
     padding-top: 20px;
   }
+  */
+
 
 /* MATRIX Rain */
 body .matrix-animation-container {
@@ -741,7 +790,7 @@ body .matrix-animation-container {
 }
 .contact-me-section h2, .contact-me-section p, #contact-me-button.hello-button {
     /*background-color: #1f8dd6;*/
-     color: #8892b0;
+     color: #ccd6f6;
   font-family: 'Bodoni Moda', serif;
 }
 
@@ -869,6 +918,7 @@ text-align: center;
 justify-content: space-between;
 gap: 30px;
 margin: 40px;
+color: #ccd6f6; 
 }
 
 img#social-icon.icon-link {
@@ -1006,7 +1056,6 @@ span{
     background-color: #0f172a;
     font-family: 'Fira Code', monospace;
     font-size: 18px;
-    color: #8892b0;
     margin-bottom: 20px;
 }
 
@@ -1015,6 +1064,36 @@ font-size: 23px;
 }
 .matrix-overlay-text h2{
   font-size:40px;
+}
+
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 40px;
+    row-gap: 20px;
+    width: 100%;
+}
+
+.skills-wrapper > div {
+    text-align: left;
+}
+
+.skills-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+}
+.skills-wrapper > div {
+    min-width: 0;
+}
+
+.about-grid .grid-item:last-child {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
 }
 
 .project-section h1 {
@@ -1041,8 +1120,9 @@ font-size: 23px;
     height: auto;
   }
   .skills-container {
-    max-width: 450px;
-    margin: auto;
+    width: 100%;
+    max-width: none;
+    margin: 30px 0 0;
     text-align: left;
 }
 
