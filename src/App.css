@@ -924,12 +924,14 @@ color: #ccd6f6;
 .icon-link {
   width: 40px; 
   height: 40px; 
+  transition: transform 0.3s ease, filter 0.3s ease;
+  
   }
   
-  #social li:hover img {
+  #social li:hover .icon-link  {
     transform: scale(1.1);
-    filter: drop-shadow(0 0 8px #fff);
-    transition: 0.3s ease;
+    filter: brightness(1.2);
+    
   }
 
   .icon-link-be {
@@ -1296,10 +1298,9 @@ path {
   transition: transform 0.3s ease, filter 0.3s ease;
   }
 
-   #social li:hover img {
+   #social li:hover .icon-link {
     transform: scale(1.1);
-    filter: drop-shadow(0 0 8px #fff);
-    transition: 0.3s ease;
+    filter: brightness(1.2);
   }
 
   .social-links-container ul {
