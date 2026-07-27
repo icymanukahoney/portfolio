@@ -438,7 +438,7 @@ Today my work focuses on creating memorable visual stories through motion, desig
             <img src="/assets/github-link.png" alt="news-app"
             onClick={handleOpenGitHubClick}
             className="icon-link"
-            id="social-icon"
+            /* id="social-icon"*/
             style={{ cursor: 'pointer' }}
            />
             </Link>
@@ -449,7 +449,7 @@ Today my work focuses on creating memorable visual stories through motion, desig
             <img src="/assets/linkedin.png" alt="news-app"
             onClick={handleOpenLinkedinClick}
             className="icon-link"
-            id="social-icon"
+             /* id="social-icon"*/
             style={{ cursor: 'pointer' }}
             />
             </Link>
@@ -460,7 +460,7 @@ Today my work focuses on creating memorable visual stories through motion, desig
             <img src="/assets/insta.png" alt="news-app"
              onClick={handleOpenInstaClick}
              className="icon-link"
-             id="social-icon"
+              /* id="social-icon"*/
              style={{ cursor: 'pointer' }}
              />
             </Link>
@@ -471,7 +471,7 @@ Today my work focuses on creating memorable visual stories through motion, desig
             <img src="/assets/icons8-youtube-120-4.png" alt="news-app"
              onClick={handleOpenYoutubeClick}
              className="icon-link"
-             id="social-icon"
+              /* id="social-icon"*/
              style={{ cursor: 'pointer' }}
              />
             </Link>
@@ -484,7 +484,7 @@ Today my work focuses on creating memorable visual stories through motion, desig
             <img src="/assets/icons8-behance-120-3.png" alt="news-app"
              onClick={handleOpenBehanceClick}
              className="icon-link"
-             id="social-icon"
+             /* id="social-icon"*/
              style={{ cursor: 'pointer' }}
              />
             </Link>

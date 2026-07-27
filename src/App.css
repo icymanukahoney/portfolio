@@ -921,20 +921,21 @@ margin: 40px;
 color: #ccd6f6; 
 }
 
-img#social-icon.icon-link {
+.icon-link {
   width: 40px; 
   height: 40px; 
   }
+  
   #social li:hover img {
-    filter: brightness(100%) saturate(100%) hue-rotate(0deg);
-    /* Change the image color to #fec5fb */
-    filter: drop-shadow(0 0 0 #fff);
-    
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px #fff);
+    transition: 0.3s ease;
   }
 
-  img#social-icon-be.icon-link-be {
+  .icon-link-be {
     width: 60px; 
     height: 60px; 
+    transition: transform 0.3s ease, filter 0.3s ease;
     }
 
   .rocket-icon {
@@ -1289,16 +1290,16 @@ path {
   width:100%;
 }
 
-img#social-icon.icon-link {
+.icon-link {
   width: 60px; 
   height: 60px; 
+  transition: transform 0.3s ease, filter 0.3s ease;
   }
 
-  #social li:hover img {
-    filter: brightness(100%) saturate(100%) hue-rotate(0deg);
-    /* Change the image color to #fec5fb */
-    filter: drop-shadow(0 0 0 #fff);
-    
+   #social li:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px #fff);
+    transition: 0.3s ease;
   }
 
   .social-links-container ul {
